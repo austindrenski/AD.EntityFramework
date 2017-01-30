@@ -7,3 +7,6 @@
 *.DotSettings
 *.nupkg
 /nuget.exe
+*.ps1
+*.psd1
+*.psm1
