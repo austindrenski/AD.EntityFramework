@@ -11,3 +11,7 @@
 *.psd1
 *.psm1
 *.vspscc
+*.DotSettings.user
+*.suo
+app.config
+App.config

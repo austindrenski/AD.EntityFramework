@@ -1,0 +1,13 @@
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\AD.EntityFramework.dll.config
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\AD.EntityFramework.dll
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\AD.EntityFramework.pdb
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\AD.IO.dll
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\JetBrains.Annotations.dll
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\Npgsql.dll
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\AD.IO.xml
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\EntityFramework.xml
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\JetBrains.Annotations.xml
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\bin\Debug\Npgsql.xml
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\obj\Debug\AD.EntityFramework.dll
+C:\Users\austin.drenski\Source\Repos\AD.EntityFramework\obj\Debug\AD.EntityFramework.pdb
