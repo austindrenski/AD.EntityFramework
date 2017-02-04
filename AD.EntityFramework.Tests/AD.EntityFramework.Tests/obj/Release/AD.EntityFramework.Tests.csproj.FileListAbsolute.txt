@@ -1,5 +1,0 @@
-C:\Source\Repos\AD.EntityFramework\AD.EntityFramework.Tests\AD.EntityFramework.Tests\bin\Release\AD.EntityFramework.Tests.dll
-C:\Source\Repos\AD.EntityFramework\AD.EntityFramework.Tests\AD.EntityFramework.Tests\bin\Release\AD.EntityFramework.Tests.pdb
-C:\Source\Repos\AD.EntityFramework\AD.EntityFramework.Tests\AD.EntityFramework.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Source\Repos\AD.EntityFramework\AD.EntityFramework.Tests\AD.EntityFramework.Tests\obj\Release\AD.EntityFramework.Tests.dll
-C:\Source\Repos\AD.EntityFramework\AD.EntityFramework.Tests\AD.EntityFramework.Tests\obj\Release\AD.EntityFramework.Tests.pdb

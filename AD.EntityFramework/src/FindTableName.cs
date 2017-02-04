@@ -8,9 +8,18 @@ using JetBrains.Annotations;
 
 namespace AD.EntityFramework
 {
+    /// <summary>
+    /// Extension methods to find the table name of a <see cref="DbSet"/> inside of a <see cref="DbContext"/>.
+    /// </summary>
     [PublicAPI]
     public static class FindTableNameExtensions
     {
+        /// <summary>
+        /// Returns the string table name of the <see cref="DbSet"/> from the <see cref="DbContext"/>.
+        /// </summary>
+        /// <param name="context">The <see cref="DbContext"/> to search.</param>
+        /// <param name="entity">The <see cref="DbSet"/> for which to search.</param>
+        /// <returns>The string table name of the <see cref="DbSet"/>.</returns>
         public static string FindTableName(this DbContext context, DbSet entity)
         {
             MetadataWorkspace metadata = ((IObjectContextAdapter)context).ObjectContext.MetadataWorkspace;

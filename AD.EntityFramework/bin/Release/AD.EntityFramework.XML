@@ -31,6 +31,38 @@
             <param name="file">An <see cref="T:AD.IO.XmlFilePath"/> wherein the children of the root element are record elements.</param>
             <param name="table">The name of the table to which records are copied.</param>
         </member>
+        <member name="T:AD.EntityFramework.EntityFrameworkExtensionAttribute">
+            <summary>
+            This attribute flags an extension method as a target for calls to <see cref="T:AD.EntityFramework.ReduceExpressionExtensions"/>.
+            </summary>
+        </member>
+        <member name="T:AD.EntityFramework.FindTableNameExtensions">
+            <summary>
+            Extension methods to find the table name of a <see cref="T:System.Data.Entity.DbSet"/> inside of a <see cref="T:System.Data.Entity.DbContext"/>.
+            </summary>
+        </member>
+        <member name="M:AD.EntityFramework.FindTableNameExtensions.FindTableName(System.Data.Entity.DbContext,System.Data.Entity.DbSet)">
+            <summary>
+            Returns the string table name of the <see cref="T:System.Data.Entity.DbSet"/> from the <see cref="T:System.Data.Entity.DbContext"/>.
+            </summary>
+            <param name="context">The <see cref="T:System.Data.Entity.DbContext"/> to search.</param>
+            <param name="entity">The <see cref="T:System.Data.Entity.DbSet"/> for which to search.</param>
+            <returns>The string table name of the <see cref="T:System.Data.Entity.DbSet"/>.</returns>
+        </member>
+        <member name="T:AD.EntityFramework.LeftOuterJoinExtensions">
+            <summary>
+            Extension methods to perform left outer joins between entities.
+            </summary>
+        </member>
+        <member name="M:AD.EntityFramework.LeftOuterJoinExtensions.LeftOuterJoin``1(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            Performs a left outer join.
+            </summary>
+            <typeparam name="T">The type of the source <see cref="T:System.Linq.IQueryable"/>.</typeparam>
+            <param name="queryable">The source <see cref="T:System.Linq.IQueryable"/>.</param>
+            <param name="predicate">The predicate joining the source <see cref="T:System.Linq.IQueryable"/> with another entity.</param>
+            <returns>The result of the left outer join.</returns>
+        </member>
         <member name="T:AD.EntityFramework.ReduceExpressionExtensions">
             <summary>
             Extension methods to translate extension methods into expression trees for consumption by Entity Framework.
