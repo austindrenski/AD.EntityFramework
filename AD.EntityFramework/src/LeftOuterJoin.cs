@@ -21,15 +21,15 @@ namespace AD.EntityFramework
         [EntityFrameworkExtension]
         public static IQueryable<T> LeftOuterJoin<T>(this IQueryable<T> queryable, Expression<Func<T, bool>> predicate) where T : new()
         {
-            return !queryable.Provider
-                             .ToString()
-                             .Equals("System.Data.Entity.Internal.Linq.DbQueryProvider", StringComparison.OrdinalIgnoreCase)
+            return queryable.Provider
+                            .ToString()
+                            .Equals("System.Data.Entity.Internal.Linq.DbQueryProvider", StringComparison.OrdinalIgnoreCase)
                    ?
                    queryable.Where(predicate)
-                            .DefaultIfEmpty(new T()) 
+                            .DefaultIfEmpty()
                    :
                    queryable.Where(predicate)
-                            .DefaultIfEmpty();
+                            .DefaultIfEmpty(new T());
         }
     }
 }

@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\BulkCopy.cs" />
+    <Compile Include="src\ElementAtOrDefault.cs" />
     <Compile Include="src\EntityFrameworkExtensionAttribute.cs" />
     <Compile Include="src\EntityFrameworkExtensionExpressionVisitor.cs" />
     <Compile Include="src\EntityFrameworkExtensionQueryable.cs" />
