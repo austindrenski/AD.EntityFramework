@@ -30,7 +30,7 @@ namespace AD.EntityFramework
             return ExecuteMethod(methodCallExpression.Method, parameters).Expression;
         }
 
-        private IQueryable ExecuteMethod(MethodInfo methodInfo, object[] parameters)
+        private static IQueryable ExecuteMethod(MethodInfo methodInfo, object[] parameters)
         {
             return (IQueryable)methodInfo.Invoke(null, parameters);
         }
@@ -46,10 +46,10 @@ namespace AD.EntityFramework
             return parameters;
         }
 
-        private object ProcessArgument(Expression argument)
+        private static object ProcessArgument(Expression argument)
         {
-            return (argument.NodeType == ExpressionType.Constant) ? ((ConstantExpression)argument).Value :
-                   (argument.NodeType == ExpressionType.Quote) ? ((UnaryExpression)argument).Operand : argument;
+            return argument.NodeType == ExpressionType.Constant ? ((ConstantExpression)argument).Value :
+                   argument.NodeType == ExpressionType.Quote ? ((UnaryExpression)argument).Operand : argument;
         }
     }
 }
