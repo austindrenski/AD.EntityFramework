@@ -42,7 +42,15 @@ namespace AD.EntityFramework
         /// <param name="table">The name of the table to which records are copied.</param>
         public static int BulkCopy(this DbContext context, string schema, string table, XmlFilePath file)
         {
-            XDocument document = XDocument.Load(file);
+            XDocument document;
+            try
+            {
+                document = XDocument.Load(file);
+            }
+            catch
+            {
+                document = new XDocument();
+            }
             int count = document.Root?.Elements().Count() ?? 0;
             if (count == 0)
             {
